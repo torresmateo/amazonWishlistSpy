@@ -1,0 +1,4 @@
+amazonWishlistSpy
+=================
+
+amazon wishlist tracker 
