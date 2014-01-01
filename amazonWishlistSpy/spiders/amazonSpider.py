@@ -3,6 +3,8 @@
 
 from scrapy.spider import BaseSpider
 from scrapy.selector import Selector
+from amazonWishlistSpy.items import AmazonwishlistspyItem
+
 
 class AmazonSpider(BaseSpider):
 	name = "amazonSpider"

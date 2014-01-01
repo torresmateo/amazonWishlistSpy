@@ -10,5 +10,5 @@ class AmazonwishlistspyItem(Item):
 	# name = Field()
 	title = Field()
 	price = Field()
-	url = Field()
+	link = Field()
 	pass
