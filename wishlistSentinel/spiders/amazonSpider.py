@@ -3,7 +3,7 @@
 
 from scrapy.spider import BaseSpider
 from scrapy.selector import Selector
-from amazonWishlistSpy.items import AmazonwishlistspyItem
+from wishlistSentinel.items import wishlistSentinelItem
 
 
 class AmazonSpider(BaseSpider):
@@ -21,7 +21,7 @@ class AmazonSpider(BaseSpider):
 		items = sel.xpath("//div[starts-with(@id,'itemInfo_')]")
 		extraction = []
 		for item in items:
-			spyItem = AmazonwishlistspyItem()
+			spyItem = wishlistSentinelItem()
 			spyItem['title'] = item.xpath(".//a[starts-with(@id,'itemName')]/@title").extract()
 			spyItem['price'] = [a.strip() for a in item.xpath(".//span[contains(@class,'a-color-price')][1]/text()").extract()]
 			spyItem['link'] = [ "http://www.amazon.com" + str(a) for a in  item.xpath(".//a[starts-with(@id,'itemName')]/@href").extract()]

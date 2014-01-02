@@ -6,10 +6,10 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'amazonWishlistSpy'
+BOT_NAME = 'wishlistSentinel'
 
-SPIDER_MODULES = ['amazonWishlistSpy.spiders']
-NEWSPIDER_MODULE = 'amazonWishlistSpy.spiders'
+SPIDER_MODULES = ['wishlistSentinel.spiders']
+NEWSPIDER_MODULE = 'wishlistSentinel.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'amazonWishlistSpy (+http://www.yourdomain.com)'
