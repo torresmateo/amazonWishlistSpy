@@ -5,10 +5,11 @@
 
 from scrapy.item import Item, Field
 
-class wishlistSentinelItem(Item):
-	# define the fields for your item here like:
-	# name = Field()
-	title = Field()
-	price = Field()
-	link = Field()
-	pass
+
+class WishlistSentinelItem(Item):
+    # define the fields for your item here like:
+    # name = Field()
+    title = Field()
+    price = Field()
+    link = Field()
+    pass
